@@ -1,4 +1,4 @@
-#include "unistd.h"
+#include "main.h"
 
 /**
  * main - Entry point
@@ -7,13 +7,14 @@
 
 int main(void)
 {
-char c[10] = "Holberton";
-int i = 0;
-while (i < 9)
-{
-_putchar(c[i]);
-i++;
-}
-_putchar('\n');
-return (0);
+	char text[9] = "_putchar";
+	int i = 0;
+
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(text[i]);
+	}
+	_putchar('\n');
+
+	return (0);
 }
