@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * print_last_digit - return last digit
  * @n : number to check
@@ -7,13 +7,12 @@
 
 int print_last_digit(int n)
 {
-	int nv;
+	int last = n % 10;
 
 	if (n < 0)
-		nv = -1 * (n % 10);
-	else
-		nv = n % 10;
+		last = last * -1;
 
-	_putchar(nv + '0');
-		return (nv);
+	_putchar(last + '0');
+
+	return (last);
 }
