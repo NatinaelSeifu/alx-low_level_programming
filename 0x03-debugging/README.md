@@ -1,1 +1,2 @@
-<h1>Debugging
+<h1>Debugging  
+<h2>Rubber Duck Debugging
