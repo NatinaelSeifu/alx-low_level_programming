@@ -1,0 +1,12 @@
+1. What is argc?
+The number of command line arguments
+The size of the argv array
+2. What is argv?
+An array containing the program command line arguments
+An array of size argc
+3. argv[0]
+program name
+4. argv[argc]
+NULL
+5. argv[2] of ./argv My School is fun
+School
