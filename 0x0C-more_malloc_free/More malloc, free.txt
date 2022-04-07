@@ -1,0 +1,46 @@
+0.To allocate enough space for an array of 10 integers (on a 64bit, Linux machine), I can use:
+malloc(10*sizeof(int))
+1.If I want to copy the string “Best School” into a new space in memory, I can use this statement to reserve enough space for it (select all valid answers):
+malloc(sizeof(“Best School”))
+malloc(12)
+malloc(strlen(“Best School”) + 1)
+2.malloc returns a pointer
+3.malloc returns an address
+4.What is wrong with this code:
+int cp(void)
+{
+    char *s;
+
+    s = malloc(12);
+    strcpy(s, "Best School");
+    return (0);
+}
+There is no comment
+malloc can fail so we should check its return value all the time before using the pointers returned by the function.
+5.I can't do this 
+free("Best School");
+6.I can't do this
+char str[] = "Best School";
+
+free (str);
+7.I can do this
+char *s;
+
+s = strdup("Best School");
+if (s != NULL)
+{
+    free(s);
+}
+8.The memory space reserved when calling malloc is on:
+The heap
+9.What will you see on the terminal?
+int main(void)
+{
+    int *ptr;
+
+    *ptr = 98;
+    printf("%d\n", *ptr);
+    return (0);
+}
+
+Segmentation Fault
